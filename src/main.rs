@@ -67,7 +67,7 @@ mod workout {
             if let Entry::Vacant(o) = self.values.entry(*arg) {
                 o.insert((self.calculation)(*arg));
             }
-            // HashMap 入参为Key, 闭包为Value
+            // HashMap 入参为Key, 闭包运算值为Value
             &self.values[arg]
         }
     }
